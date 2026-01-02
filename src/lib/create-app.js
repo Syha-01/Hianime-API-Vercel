@@ -5,6 +5,7 @@ import { logger } from 'hono/logger';
 import { fail } from '../utils/response';
 import { AppError } from '../utils/errors';
 import zodValidationHook from '@/middlewares/hook';
+import { htmlAsString } from '@/utils/htmlAsString';
 
 export function createRouter() {
   return new OpenAPIHono({
@@ -35,7 +36,7 @@ export default function createApp() {
     .use(corsConf)
     .use(rateLimiterConf)
     .use('/api/v1/*', logger())
-    .get('/', (c) => c.text('welcome to anime API 🎉 goto /ui for docs'))
+    .get('/', (c) => c.html(htmlAsString))
     .get('/ping', (c) => c.text('pong'))
     .notFound((c) => fail(c, 'page not found', 404))
     .onError((err, c) => {

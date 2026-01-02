@@ -9,7 +9,7 @@ export default function suggestionExtract(html) {
   const items = allEl.splice(0, allEl.length - 2);
   $(items).each((i, el) => {
     const obj = {
-      ...commonAnimeObj,
+      ...commonAnimeObj(),
       aired: null,
       type: null,
       duration: null,

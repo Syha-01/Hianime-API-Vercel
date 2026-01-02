@@ -7,8 +7,8 @@ export default function spotlightExtract(html) {
   const response = [];
   $('.deslide-wrap .swiper-wrapper .swiper-slide').each((i, el) => {
     const obj = {
-      ...commonAnimeObj,
-      ...episodeObj,
+      ...commonAnimeObj(),
+      ...episodeObj(),
       rank: null,
       type: null,
       quality: null,

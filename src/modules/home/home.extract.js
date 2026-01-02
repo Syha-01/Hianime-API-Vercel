@@ -30,8 +30,8 @@ export default function homeExtract(html) {
 
   $($spotlight).each((i, el) => {
     const obj = {
-      ...commonAnimeObj,
-      ...episodeObj,
+      ...commonAnimeObj(),
+      ...episodeObj(),
       rank: null,
       type: null,
       quality: null,
@@ -55,16 +55,19 @@ export default function homeExtract(html) {
     obj.aired = details.find('.scd-item.m-hide').text().trim();
     obj.quality = details.find('.scd-item .quality').text().trim();
 
-    obj.episodes.sub = Number(details.find('.tick-sub').text().trim());
-    obj.episodes.dub = Number(details.find('.tick-dub').text().trim());
+    const epsEl = details.find('.tick');
+    obj.episodes.sub = Number(epsEl.find('.tick-sub').text().trim());
+    obj.episodes.dub = Number(epsEl.find('.tick-dub').text().trim());
 
-    const epsText = details.find('.tick-eps').length
-      ? details.find('.tick-eps').text().trim()
-      : details.find('.tick-sub').text().trim();
-    obj.episodes.eps = Number(epsText);
+    const isEps = Number(epsEl.find('.tick-eps').length);
+
+    obj.episodes.eps = isEps
+      ? Number(epsEl.find('.tick-eps').text().trim())
+      : Number(epsEl.find('.tick-sub').text().trim());
 
     response.spotlight.push(obj);
   });
+
   $($trending).each((i, el) => {
     const obj = {
       title: null,
@@ -93,8 +96,8 @@ export default function homeExtract(html) {
       .find('.anif-block-ul ul li')
       .map((index, item) => {
         const obj = {
-          ...commonAnimeObj,
-          ...episodeObj,
+          ...commonAnimeObj(),
+          ...episodeObj(),
           type: null,
         };
         const titleEl = $(item).find('.film-detail .film-name a');
@@ -129,8 +132,8 @@ export default function homeExtract(html) {
       .find('.tab-content .film_list-wrap .flw-item')
       .map((index, item) => {
         const obj = {
-          ...commonAnimeObj,
-          ...episodeObj,
+          ...commonAnimeObj(),
+          ...episodeObj(),
         };
         const titleEl = $(item).find('.film-detail .film-name .dynamic-name');
         obj.title = titleEl.attr('title');

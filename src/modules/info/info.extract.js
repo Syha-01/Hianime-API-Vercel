@@ -5,8 +5,8 @@ export default function infoExtract(html) {
   const $ = load(html);
 
   const obj = {
-    ...commonAnimeObj,
-    ...episodeObj,
+    ...commonAnimeObj(),
+    ...episodeObj(),
     rating: null,
     type: null,
     is18Plus: null,

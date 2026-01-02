@@ -18,8 +18,8 @@ export default function exploreExtract(html) {
   }
   $('.block_area-content.block_area-list.film_list .film_list-wrap .flw-item').each((i, el) => {
     const obj = {
-      ...commonAnimeObj,
-      ...episodeObj,
+      ...commonAnimeObj(),
+      ...episodeObj(),
       type: null,
       duration: null,
     };
