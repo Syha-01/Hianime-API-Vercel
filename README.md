@@ -65,7 +65,7 @@ http://localhost:3030/doc
 
 ### Deploy on Render
 
-[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/yahyaMomin/hianime-API)
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/Syha-01/hianime-API)
 
 ---
 
