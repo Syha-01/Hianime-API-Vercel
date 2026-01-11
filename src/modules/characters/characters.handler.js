@@ -1,6 +1,6 @@
 import { NotFoundError } from '../../utils/errors.js';
 import config from '../../config/config.js';
-import charactersExtract from './characters.extract';
+import charactersExtract from './characters.extract.js';
 
 export default async function charactersHandler(c) {
   const { id } = c.req.valid('param');

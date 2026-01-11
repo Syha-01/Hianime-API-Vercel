@@ -1,7 +1,7 @@
 import { validationError } from '../../../utils/errors.js';
 import config from '../../../config/config.js';
-// import monthlyScheduleExtract from './monthlySchedule.extarct';
-import monthlyScheduleExtract from './monthlySchedule.extract';
+// import monthlyScheduleExtract from './monthlySchedule.extarct.js';
+import monthlyScheduleExtract from './monthlySchedule.extract.js';
 
 export default async function monthyScheduleHandler(c) {
   const today = new Date(Date.now());

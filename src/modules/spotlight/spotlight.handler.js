@@ -1,6 +1,6 @@
 import { axiosInstance } from '../../services/axiosInstance.js';
 import { validationError } from '../../utils/errors.js';
-import spotlightExtract from './spotlight.extract';
+import spotlightExtract from './spotlight.extract.js';
 
 export default async function spotlightHandler() {
   const result = await axiosInstance('/home');

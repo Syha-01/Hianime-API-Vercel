@@ -1,4 +1,4 @@
-import exploreExtract from './explore.extract';
+import exploreExtract from './explore.extract.js';
 import { axiosInstance } from '../../services/axiosInstance.js';
 import createEndpoint from '../../utils/createEndpoint.js';
 import { NotFoundError, validationError } from '../../utils/errors.js';

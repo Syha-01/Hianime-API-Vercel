@@ -1,4 +1,4 @@
-import nextEpScheduleExtract from './nextEpSchedule.extract';
+import nextEpScheduleExtract from './nextEpSchedule.extract.js';
 import { axiosInstance } from '../../../services/axiosInstance.js';
 import { validationError } from '../../../utils/errors.js';
 

@@ -1,5 +1,5 @@
 import { createRoute, z } from '@hono/zod-openapi';
-import { BasicAnimeSchema } from '../globalSchema/schema';
+import { BasicAnimeSchema } from '../globalSchema/schema.js';
 import someAnimes from '../../utils/someAnimes.js';
 
 const schema = z.object({

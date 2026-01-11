@@ -1,6 +1,6 @@
 import { axiosInstance } from '../../services/axiosInstance.js';
 import { validationError } from '../../utils/errors.js';
-import homeExtract from './home.extract';
+import homeExtract from './home.extract.js';
 
 import connectRedis from '../../utils/connectRedis.js';
 

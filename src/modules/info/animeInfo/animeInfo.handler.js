@@ -1,7 +1,7 @@
 import { axiosInstance } from '../../../services/axiosInstance.js';
 import connectRedis from '../../../utils/connectRedis.js';
 import { validationError } from '../../../utils/errors.js';
-import infoExtract from '../info.extract';
+import infoExtract from '../info.extract.js';
 
 export default async function animeInfo(c) {
   const { id } = c.req.valid('param');

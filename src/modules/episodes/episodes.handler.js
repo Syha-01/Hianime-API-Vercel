@@ -1,5 +1,5 @@
 import config from '../../config/config.js';
-import episodesExtract from './episodes.extract';
+import episodesExtract from './episodes.extract.js';
 import { NotFoundError } from '../../utils/errors.js';
 
 export default async function episodesHandler(c) {

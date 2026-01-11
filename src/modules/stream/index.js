@@ -1,4 +1,4 @@
-import streamHandler from './stream.handler';
-import streamSchema from './stream.schema';
+import streamHandler from './stream.handler.js';
+import streamSchema from './stream.schema.js';
 
 export { streamHandler as handler, streamSchema as schema };

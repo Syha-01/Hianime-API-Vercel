@@ -1,6 +1,6 @@
 import { axiosInstance } from '../../../services/axiosInstance.js';
 import { NotFoundError, validationError } from '../../../utils/errors.js';
-import characterInfoExtract from '../characterInfo.extract';
+import characterInfoExtract from '../characterInfo.extract.js';
 
 export default async function voiceActorHandler(c) {
   const { id } = c.req.valid('param');

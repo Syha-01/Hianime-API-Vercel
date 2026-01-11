@@ -1,5 +1,5 @@
 import config from '../../config/config.js';
-import serversExtract from './servers.extract';
+import serversExtract from './servers.extract.js';
 import { NotFoundError } from '../../utils/errors.js';
 
 export default async function (c) {

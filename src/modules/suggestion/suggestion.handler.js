@@ -1,6 +1,6 @@
 import { validationError } from '../../utils/errors.js';
 import config from '../../config/config.js';
-import suggestionExtract from './suggestion.extract';
+import suggestionExtract from './suggestion.extract.js';
 
 export default async function suggestionHandler(c) {
   const { keyword } = c.req.valid('query');

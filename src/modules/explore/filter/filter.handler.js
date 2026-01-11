@@ -1,5 +1,5 @@
 import { filterOptions } from '../../../config/meta.js';
-import exploreExtract from '../explore.extract';
+import exploreExtract from '../explore.extract.js';
 import { axiosInstance } from '../../../services/axiosInstance.js';
 import { validationError } from '../../../utils/errors.js';
 

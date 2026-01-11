@@ -1,6 +1,6 @@
 import { axiosInstance } from '../../services/axiosInstance.js';
 import { validationError } from '../../utils/errors.js';
-import topTenExtract from './topTen.extract';
+import topTenExtract from './topTen.extract.js';
 
 export default async function topTenHandler() {
   const result = await axiosInstance('/home');

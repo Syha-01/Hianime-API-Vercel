@@ -1,4 +1,4 @@
-import voiceActorHandler from './voiceActor.handler';
-import voiceActorSchema from './voiceActor.schema';
+import voiceActorHandler from './voiceActor.handler.js';
+import voiceActorSchema from './voiceActor.schema.js';
 
 export { voiceActorHandler as handler, voiceActorSchema as schema };

@@ -1,5 +1,5 @@
 import { createRoute, z } from '@hono/zod-openapi';
-import { AnimeWithEpisodesSchema, BasicAnimeSchema } from '../globalSchema/schema';
+import { AnimeWithEpisodesSchema, BasicAnimeSchema } from '../globalSchema/schema.js';
 
 const Item = z.any();
 
