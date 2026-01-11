@@ -1,6 +1,6 @@
-import config from '@/config/config';
+import config from '../../config/config.js';
 import serversExtract from './servers.extract';
-import { NotFoundError } from '@/utils/errors';
+import { NotFoundError } from '../../utils/errors.js';
 
 export default async function (c) {
   const { id } = c.req.valid('param');

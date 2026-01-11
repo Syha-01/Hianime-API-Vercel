@@ -1,4 +1,4 @@
-import { commonAnimeObj, episodeObj } from '@/utils/commonAnimeObj';
+import { commonAnimeObj, episodeObj } from '../../utils/commonAnimeObj.js';
 import { load } from 'cheerio';
 
 export default function exploreExtract(html) {

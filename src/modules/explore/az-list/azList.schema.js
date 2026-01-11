@@ -1,6 +1,6 @@
 import { createRoute, z } from '@hono/zod-openapi';
-import { azList } from '@/config/meta';
-import { explorePageSchema, pageParamsSchema } from '@/modules/globalSchema/schema';
+import { azList } from '../../../config/meta.js';
+import { explorePageSchema, pageParamsSchema } from '../../globalSchema/schema.js';
 
 const azListSchema = createRoute({
   method: 'get',

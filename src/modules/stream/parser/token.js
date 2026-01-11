@@ -1,5 +1,5 @@
 import * as cheerio from 'cheerio';
-import config from '@/config/config.js';
+import config from '../../../config/config.js';
 
 const { baseurl } = config;
 

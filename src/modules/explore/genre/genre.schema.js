@@ -1,6 +1,6 @@
 import { createRoute, z } from '@hono/zod-openapi';
-import { genres } from '@/config/meta';
-import { explorePageSchema, pageParamsSchema } from '@/modules/globalSchema/schema';
+import { genres } from '../../../config/meta.js';
+import { explorePageSchema, pageParamsSchema } from '../../globalSchema/schema.js';
 
 const genreSchema = createRoute({
   method: 'get',

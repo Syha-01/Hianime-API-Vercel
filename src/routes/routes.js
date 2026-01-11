@@ -21,7 +21,7 @@ import * as stream from '../modules/stream/index';
 import * as monthlySchedule from '../modules/schedule/monthlySchedule/index';
 import * as nextEpSchedule from '../modules/schedule/nextEpSchedule/index';
 import * as meta from '../modules/meta/index';
-import withTryCatch from '@/utils/withTryCatch';
+import withTryCatch from '../utils/withTryCatch.js';
 
 const router = createRouter();
 

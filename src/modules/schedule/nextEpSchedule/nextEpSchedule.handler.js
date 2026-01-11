@@ -1,6 +1,6 @@
 import nextEpScheduleExtract from './nextEpSchedule.extract';
-import { axiosInstance } from '@/services/axiosInstance';
-import { validationError } from '@/utils/errors';
+import { axiosInstance } from '../../../services/axiosInstance.js';
+import { validationError } from '../../../utils/errors.js';
 
 export default async function nextEpScheduleHandler(c) {
   const { id } = c.req.valid('param');

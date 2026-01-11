@@ -1,6 +1,6 @@
-import config from '@/config/config';
+import config from '../../config/config.js';
 import episodesExtract from './episodes.extract';
-import { NotFoundError } from '@/utils/errors';
+import { NotFoundError } from '../../utils/errors.js';
 
 export default async function episodesHandler(c) {
   const { id } = c.req.valid('param');

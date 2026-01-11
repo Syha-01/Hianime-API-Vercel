@@ -1,5 +1,5 @@
-import { axiosInstance } from '@/services/axiosInstance';
-import { validationError } from '@/utils/errors';
+import { axiosInstance } from '../../../services/axiosInstance.js';
+import { validationError } from '../../../utils/errors.js';
 import infoExtract from '../info.extract';
 
 export default async function randomAnimeInfoHandler() {

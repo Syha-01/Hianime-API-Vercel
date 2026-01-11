@@ -1,5 +1,5 @@
-import { validationError } from '@/utils/errors';
-import config from '@/config/config';
+import { validationError } from '../../../utils/errors.js';
+import config from '../../../config/config.js';
 // import monthlyScheduleExtract from './monthlySchedule.extarct';
 import monthlyScheduleExtract from './monthlySchedule.extract';
 

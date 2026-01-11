@@ -1,6 +1,6 @@
 import { createRoute, z } from '@hono/zod-openapi';
-import { explorePageSchema, pageParamsSchema } from '@/modules/globalSchema/schema';
-import someAnimes from '@/utils/someAnimes';
+import { explorePageSchema, pageParamsSchema } from '../../globalSchema/schema.js';
+import someAnimes from '../../../utils/someAnimes.js';
 
 const producerSchema = createRoute({
   method: 'get',

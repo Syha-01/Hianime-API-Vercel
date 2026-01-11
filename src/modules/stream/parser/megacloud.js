@@ -1,5 +1,5 @@
 import CryptoJS from 'crypto-js';
-import config from '@/config/config.js';
+import config from '../../../config/config.js';
 import extractToken from './token';
 
 const { baseurl } = config;

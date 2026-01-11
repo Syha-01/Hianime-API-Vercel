@@ -1,5 +1,5 @@
-import { NotFoundError } from '@/utils/errors';
-import config from '@/config/config';
+import { NotFoundError } from '../../utils/errors.js';
+import config from '../../config/config.js';
 import charactersExtract from './characters.extract';
 
 export default async function charactersHandler(c) {

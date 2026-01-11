@@ -1,5 +1,5 @@
-import { axiosInstance } from '@/services/axiosInstance';
-import { NotFoundError, validationError } from '@/utils/errors';
+import { axiosInstance } from '../../../services/axiosInstance.js';
+import { NotFoundError, validationError } from '../../../utils/errors.js';
 import characterInfoExtract from '../characterInfo.extract';
 
 export default async function animeCharacterHandler(c) {

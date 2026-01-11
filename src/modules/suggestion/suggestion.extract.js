@@ -1,4 +1,4 @@
-import { commonAnimeObj } from '@/utils/commonAnimeObj';
+import { commonAnimeObj } from '../../utils/commonAnimeObj.js';
 import { load } from 'cheerio';
 
 export default function suggestionExtract(html) {

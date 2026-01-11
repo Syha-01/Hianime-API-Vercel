@@ -1,4 +1,4 @@
-import { NotFoundError, validationError } from '@/utils/errors.js';
+import { NotFoundError, validationError } from '../../utils/errors.js';
 import { getServers } from '../servers/servers.handler.js';
 import streamExtract from './stream.extract.js';
 

@@ -1,8 +1,8 @@
-import { axiosInstance } from '@/services/axiosInstance';
-import { validationError } from '@/utils/errors';
+import { axiosInstance } from '../../services/axiosInstance.js';
+import { validationError } from '../../utils/errors.js';
 import homeExtract from './home.extract';
 
-import connectRedis from '@/utils/connectRedis';
+import connectRedis from '../../utils/connectRedis.js';
 
 export default async function homeHandler() {
   const { exist, redis } = await connectRedis();

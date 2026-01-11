@@ -4,8 +4,8 @@ import { cors } from 'hono/cors';
 import { logger } from 'hono/logger';
 import { fail } from '../utils/response.js';
 import { AppError } from '../utils/errors.js';
-import zodValidationHook from '@/middlewares/hook';
-import { htmlAsString } from '@/utils/htmlAsString';
+import zodValidationHook from '../middlewares/hook.js';
+import { htmlAsString } from '../utils/htmlAsString.js';
 
 export function createRouter() {
   return new OpenAPIHono({

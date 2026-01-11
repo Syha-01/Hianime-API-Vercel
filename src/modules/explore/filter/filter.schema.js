@@ -1,5 +1,5 @@
 import { createRoute, z } from '@hono/zod-openapi';
-import { explorePageSchema, pageParamsSchema } from '@/modules/globalSchema/schema';
+import { explorePageSchema, pageParamsSchema } from '../../globalSchema/schema.js';
 
 const filterSchema = createRoute({
   method: 'get',

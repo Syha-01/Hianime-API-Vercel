@@ -1,7 +1,7 @@
 import exploreExtract from './explore.extract';
-import { axiosInstance } from '@/services/axiosInstance';
-import createEndpoint from '@/utils/createEndpoint';
-import { NotFoundError, validationError } from '@/utils/errors';
+import { axiosInstance } from '../../services/axiosInstance.js';
+import createEndpoint from '../../utils/createEndpoint.js';
+import { NotFoundError, validationError } from '../../utils/errors.js';
 
 export default async function exploreHandler(c) {
   const { query } = c.req.valid('param');
