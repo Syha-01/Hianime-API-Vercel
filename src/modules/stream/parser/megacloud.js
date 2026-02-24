@@ -12,7 +12,7 @@ const TIMEOUT = 15000;
 const KEY_CACHE_DURATION = 60 * 60 * 1000; // 1 hour
 
 const KEY_URL =
-  'https://raw.githubusercontent.com/ryanwtf88/megacloud-keys/refs/heads/master/key.txt';
+  'https://raw.githubusercontent.com/itzzzme/megacloud-keys/main/key.txt';
 
 const FALLBACK_PROVIDERS = [
   { name: 'megaplay', domain: 'megaplay.buzz' },
